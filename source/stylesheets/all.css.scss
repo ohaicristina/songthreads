@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+////////
+// overall
+
+body {
+  background-color: $background-main;
+}
+
+.app-title {
+  text-align: center;
+  margin: 3em;
+
+  h1 {
+    color: $body-text;
+  }
+}
+
+.song-search {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+
+  .search-container {
+  }
+
+  .search-button {
+    @include fill-parent;
+    color: $body-text;
+    display: inline-block;
+    background-color: darken($background-main, 20);
+    text-align: center;
+    padding: 0.5em;
+  }
+}
