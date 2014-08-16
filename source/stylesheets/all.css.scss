@@ -11,6 +11,13 @@ body {
   background-color: $background-main;
 }
 
+.container {
+  @include position(absolute, 0px 0px 0px 0px);
+  height: 50%;
+  width: 100%;
+  margin: auto;
+}
+
 .app-title {
   text-align: center;
   margin: 3em;
@@ -36,4 +43,40 @@ body {
     text-align: center;
     padding: 0.5em;
   }
+}
+
+.lyric-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.message {
+  text-size: 2em;
+  color: white;
+}
+
+.toggle-style-buttons {
+  display: none;
+
+  li {
+    @include span-columns(3);
+    text-align: center;
+
+    a {
+      color: $body-text;
+    }
+  }
+}
+
+.display-toggle {
+  display: inline;
+}
+
+.sans-serif {
+  font-family: $sans-serif;
+}
+
+.serif {
+  font-family: $serif;
 }
